@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.brand-name {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    color: #e8ceb5;
+    
+}
+
+.left-side {
+    display: flex;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.text-1 {
+    margin-right: 20px;
+    color: #e8ceb5;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 10px;
+    
+}
+
+.text-1:hover {
+    border: 2px solid #758623;
+    border-radius: 15px;
+    padding-top: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #758623;
+    transition: 0.2s;
+}
+
+
+.right-side {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.button-1, .button-2 {
+    color: #e8ceb5;
+    background-color: #485216;
+    font-size: 12px;
+    border-color: #485216;
+    border-style: solid;
+    border-radius: 10px;
+
+}
+
+.button-1 {
+    margin-right: 15px;
+    
+}
+
+.button-1:hover, .button-2:hover {
+    border-color: #485216;
+    background-color: #758623;
+}
