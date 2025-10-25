@@ -1,0 +1,306 @@
+/* === RESPONSIVE / MOBILE === */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 40px;
+    gap: 15px;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 80px 40px;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-text, .hero-image {
+    width: 100%;
+  }
+
+  .taha-image {
+    width: 250px;
+  }
+
+  .about {
+    padding: 80px 40px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-buttons {
+    gap: 10px;
+  }
+
+  .nav-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .taha-image {
+    width: 200px;
+  }
+
+  .about {
+    padding: 60px 20px;
+  }
+
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+/* === GLOBAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0a0d1a;
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+/* === NAVBAR === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 80px;
+  position: sticky;
+  top: 0;
+  background-color: #11141f;
+  z-index: 999;
+  border-bottom: 1px solid #222532;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-btn {
+  background: #00ff7f;
+  color: #0a0d1a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  box-shadow: 0 0 15px #00ff7f, 0 0 30px #00ff7f;
+  transform: translateY(-3px);
+}
+
+.social-links {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.social img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+/* === HERO SECTION === */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 80px;
+  gap: 50px;
+}
+
+.hero-text {
+  width: 55%;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.chamber {
+  margin-top: 25px;
+  font-weight: 600;
+  color: #00ff7f;
+}
+
+.hero-image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taha-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid #00ff7f;
+  box-shadow: 0 0 25px rgba(0, 255, 127, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.taha-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(0, 255, 127, 0.6);
+}
+
+/* === ABOUT SECTION === */
+.about {
+  padding: 100px 80px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.about h2::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background: #00ff7f;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #ccc;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #11141f;
+  color: #888;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 14px;
+  border-top: 1px solid #222532;
+}
+
+/* === RESPONSIVE / MOBILE === */
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 40px;
+  }
+
+  .hero-text, .hero-image {
+    width: 100%;
+  }
+
+  .taha-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .about {
+    padding: 60px 20px;
+  }
+
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+.logo-image {
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
