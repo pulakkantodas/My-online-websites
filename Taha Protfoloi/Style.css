@@ -1,16 +1,31 @@
 /* === RESPONSIVE / MOBILE === */
 @media screen and (max-width: 1024px) {
   .navbar {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 15px;
     height: auto;
     padding: 20px 40px;
-    gap: 15px;
   }
 
   .nav-buttons {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+  }
+
+   .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .social img {
+    width: 35px;
+    height: auto;
   }
 
   .hero {
@@ -304,3 +319,4 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
